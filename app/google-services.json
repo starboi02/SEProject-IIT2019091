@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1012013815934",
+    "project_id": "anomalydetector-c179b",
+    "storage_bucket": "anomalydetector-c179b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012013815934:android:bee4d467ea8caa73b1e02f",
+        "android_client_info": {
+          "package_name": "com.example.anomalydetector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012013815934-2u7dtnfg2njamsh788fa6otl4dk11m2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGc4XO5XI-toqxUlzxBh0f9S7pvSI4peo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012013815934-2u7dtnfg2njamsh788fa6otl4dk11m2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

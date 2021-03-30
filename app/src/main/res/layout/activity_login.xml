@@ -8,6 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_ecg_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
 
     <EditText
         android:hint="Email Address"
@@ -15,6 +23,9 @@
         android:layout_marginHorizontal="32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/border"
         />
 
     <EditText
@@ -24,6 +35,10 @@
         android:layout_marginHorizontal="32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
         />
 
     <Button
@@ -32,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:paddingVertical="12dp"
         android:layout_marginTop="20dp"
         />
 

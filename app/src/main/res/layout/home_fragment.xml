@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="32dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/default_txt"
+        android:text="Select ECG data from storage for anomaly detection."
+        android:textSize="20sp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/cross"-->
+<!--        android:text="X"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="40sp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:elevation="10dp"-->
+<!--        android:visibility="invisible"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginEnd="25dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        />-->
+
+    <LinearLayout
+        android:id="@+id/tag"
+        android:background="#778899"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="gone"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_close"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="350dp"
+        android:src="@drawable/ic_upload"
+        android:layout_height="300dp"
+        />
+
+    <Button
+        android:id="@+id/upload"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        android:text="Upload data"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <Button
+        android:id="@+id/files"
+        android:text="Upload Report from storage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
